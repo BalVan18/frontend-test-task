@@ -1,0 +1,51 @@
+@import '~/assets/styles/variables'
+@import ~/assets/styles/mixins.sass
+
+.FilterCheckbox
+    display: flex
+    flex-direction: column
+
+.FilterCheckbox__title
+    margin-bottom: calc( $gap + 4px )
+
+.FilterCheckbox-title
+    font-size: 18px
+    font-weight: 600
+    letter-spacing: 0.18px
+
+.FilterCheckbox__label:not(:last-of-type)
+    margin-bottom: 14px
+
+.FilterCheckbox-input
+    display: none
+
+.FilterCheckbox__text
+    position: relative
+    display: block
+    width: fit-content
+
+.FilterCheckbox-text
+    padding-left: 30px
+    font-size: 18px
+    letter-spacing: 0.18px
+    cursor: pointer
+
+.FilterCheckbox-text:hover::before
+    box-shadow: 0 0 2px 4px rgba(192, 90, 255, 0.2)
+
+.FilterCheckbox-text::before
+    @include trs()
+    content: ""
+    position: absolute
+    display: block
+    width: 16px
+    height: 16px
+    border: 1px solid $purple
+    border-radius: 2px
+    left: 0
+    bottom: 2px
+
+.checked::before
+    @include trs()
+    content: "\2713"
+    background-color: $purple

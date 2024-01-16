@@ -1,0 +1,13 @@
+@import '~/assets/styles/variables'
+@import '~/assets/styles/mixins.sass'
+
+.AppLogo
+    @include trs()
+    height: 43px
+    cursor: pointer
+
+    &:hover
+        transform: scale(1.05)
+
+    &:active
+        transform: scale(0.95)

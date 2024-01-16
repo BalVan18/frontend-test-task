@@ -1,0 +1,64 @@
+@import '~/assets/styles/variables'
+@import '~/assets/styles/mixins.sass'
+    
+.AppFooter
+    background-color: $purple
+
+.AppFooter-container 
+    padding-top: 55px
+    padding-bottom: 50px
+
+.AppFooter__wrap
+    display: flex
+    margin-bottom: 54px
+
+.AppFooter-wrap
+    justify-content: space-between
+
+.AppFooter-nav__list
+    display: flex
+
+.AppFooter-nav-list
+    flex-direction: column
+
+.AppFooter-nav-list__item:not(:last-of-type)
+    margin-bottom: 16px
+
+.AppFooter-nav-list-item-link
+    @include trs()
+    position: relative
+    color: $white
+    font-size: 18px
+    letter-spacing: 0.18px
+    cursor: pointer 
+
+.AppFooter-nav-list-item-link::before 
+    @include trs()
+    position: absolute
+    content: ""
+    background-color: $white
+    bottom: 0
+    right: 50%
+    left: 50%
+    width: 0
+    height: 1px
+
+.AppFooter-nav-list-item-link:hover::before 
+    width: 100%
+    right: 0
+    left: 0
+
+.AppFooter-nav-list-item-link:active::before 
+    width: 0
+    right: 50%
+    left: 50%   
+
+.AppFooter__span
+    width: fit-content
+    margin: 0 auto
+
+.AppFooter-span
+    color: $white
+    font-size: 18px
+    letter-spacing: 0.18px
+    pointer-events: none

@@ -1,2 +1,57 @@
+@import '~/assets/styles/variables.sass'
+@import '~/assets/styles/mixins.sass'
+
+@include font-face('Mulish', Mulish-ExtraBold, 800)
+@include font-face('Mulish', Mulish-SemiBold, 600)
+@include font-face('Mulish', Mulish-Medium)
+
+
+*,::before,::after
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+ul, li, a
+  all: unset
+
+html,
 body
-    background-color: purple
+  height: 100%
+  font-family: 'Mulish', sans-serif
+    
+
+body 
+  color: $black
+  font-weight: 500
+  line-height: 120%
+
+  & > * 
+    height: 100%
+
+.container 
+  @include container(1920px, 120px, 120px)
+
+  @media (max-width: 1920px)
+    @include container(1640px, 120px, 120px)
+
+  @media (max-width: 1640px)
+    @include container(1400px, 120px, 120px)
+
+  @media (max-width: 1400px)
+    @include container(1160px, 120px, 120px)
+
+  @media (max-width: 1160px)
+    @include container(960px, 100px, 100px)
+
+  @media (max-width: 1023px)
+    @include container(900px, 80px, 80px)
+
+  @media (max-width: 900px)
+    @include container(768px, 60px, 60px)
+
+  @media (max-width: 768px)
+    @include container(540px, 40px, 40px)
+
+  @media (max-width: 575px)
+    @include container(100%, $gap, $gap)
+

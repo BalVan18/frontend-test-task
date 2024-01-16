@@ -1,0 +1,44 @@
+@import '~/assets/styles/variables'
+@import '~/assets/styles/mixins.sass'
+
+.FilterDoublerange
+    margin-bottom: 45px
+
+.FilterDoublerange__title
+    margin-bottom: calc( $gap + 4px )
+
+.FilterDoublerange-title
+    font-size: 18px
+    font-weight: 600
+    letter-spacing: 0.18px
+
+.FilterDoublerange-slider__wrap
+    width: 181px
+
+.slider-target
+    height: 2px
+
+.slider-connect,
+.slider-handle
+    background-color: $purple
+
+.slider-handle
+    @include trs()
+
+.slider-handle:focus
+    box-shadow: none    
+
+.slider-handle:active
+    box-shadow: 0 0 4px 6px rgba(192, 90, 255, 0.2)
+
+.slider-horizontal .slider-handle
+    width: 14px
+    height: 14px
+
+.FilterDoublerange__count
+    margin-bottom: 17px    
+
+.FilterDoublerange-count
+    font-size: 18px
+    font-weight: 500
+    letter-spacing: 0.18px

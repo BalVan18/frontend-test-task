@@ -1,0 +1,51 @@
+@import '~/assets/styles/variables'
+@import '~/assets/styles/mixins.sass'
+
+.FilterRadio
+    display: flex
+    flex-direction: column
+    margin-bottom: calc( $gap + 5px )
+
+.FilterRadio__title
+    margin-bottom: $gap
+
+.FilterRadio-title
+    font-size: 18px
+    font-weight: 600
+    letter-spacing: 0.18px
+
+.FilterRadio__label:not(:last-of-type)
+    margin-bottom: 14px
+
+.FilterRadio-input
+    display: none
+
+.FilterRadio__text
+    position: relative
+    display: block
+    width: fit-content
+
+.FilterRadio-text
+    padding-left: 26px
+    font-size: 18px
+    letter-spacing: 0.18px
+    cursor: pointer
+
+.FilterRadio-text:hover::before
+    box-shadow: 0 0 2px 4px rgba(192, 90, 255, 0.2)
+
+.FilterRadio-text::before
+    @include trs()
+    content: ""
+    position: absolute
+    display: block
+    width: 12px
+    height: 12px
+    border: 1px solid $purple
+    border-radius: 100%
+    left: 0
+    bottom: 2px
+
+.checked::before
+    @include trs()
+    background-color: $purple
