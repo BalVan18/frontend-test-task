@@ -30,24 +30,10 @@
 </template>
 
 <script setup>
-    const burgerActive = (e) => {
-        const target = e.target
-        if (target.classList.contains('BurgerMenu-btn')){
-            target.classList.toggle('active')
-            const parent = target.parentNode
-            parent.classList.toggle('active')
-            const header = parent.parentNode
-            header.classList.toggle('active')
-            document.body.classList.toggle('overflow')
-        } else {
-            const burger = e.target.parentNode
-            burger.classList.toggle('active')
-            const parent = burger.parentNode
-            parent.classList.toggle('active')
-            const header = parent.parentNode
-            header.classList.toggle('active')
-            document.body.classList.toggle('overflow')
-        }
+    const burgerActive = () => {
+        const root = document.querySelector('.AppHeader');
+        root.classList.toggle('active');
+        document.body.classList.toggle('overflow');
     }
 </script>
 

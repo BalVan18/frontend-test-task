@@ -8,6 +8,9 @@
     &__title
         margin-bottom: calc( $gap + 2px )
 
+        @media (max-width: 485px)
+            margin-bottom: calc( $gap / 2 )
+
     &__label:not(:last-of-type)
         margin-bottom: 14px
 
@@ -21,6 +24,10 @@
     font-weight: 600
     letter-spacing: 0.18px
 
+    @media (max-width: 600px)
+        font-size: 16px
+        letter-spacing: 0.16px
+
 .FilterCheckbox-input
     display: none
 
@@ -29,6 +36,10 @@
     font-size: 18px
     letter-spacing: 0.18px
     cursor: pointer
+
+    @media (max-width: 600px)
+        font-size: 14px
+        letter-spacing: 0.14px
 
 .FilterCheckbox-text:hover::before
     box-shadow: 0 0 2px 4px rgba(192, 90, 255, 0.2)

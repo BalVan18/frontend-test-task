@@ -5,8 +5,9 @@
     display: flex
     justify-content: space-between
     padding-top: 45px
-    padding-bottom: 73px
-    z-index: 100
+
+    @media (max-width: 900px)
+        padding-top: 23px
 
     &__nav
         display: flex
@@ -41,30 +42,17 @@
         @media (max-width: 900px)
             width: 33px
             margin-right: 18px
-
-    &.active
-        position: absolute
-        align-items: flex-start
-        justify-content: flex-end
-        padding: 50px 60px 0
-        top: 0
-        right: 0
-        bottom: 0
-        left: 0
-        background-color: $white
-        z-index: 100
-
-        @media (max-width: 768px)
-            padding: 50px 40px 0
-
-        @media (max-width: 575px)
-            padding: 50px $gap 0
+            position: relative
+            z-index: 3
 
 .AppHeader-nav-list
     gap: 71px
 
     @media (max-width: 1300px)
         gap: 50px
+
+    @media (max-width: 1024px)
+        gap: 30px
 
 .AppHeader-nav-list-item-link
     @include trs()
@@ -88,4 +76,3 @@
 
     &:active
         transform: scale(0.95)
-

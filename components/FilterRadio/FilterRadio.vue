@@ -27,6 +27,6 @@
     }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     @import "FilterRadio.sass"
 </style>

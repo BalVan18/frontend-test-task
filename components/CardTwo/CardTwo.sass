@@ -7,16 +7,37 @@
         bottom: 38%
         left: 56.5%
 
+        @media ( max-width: 500px )
+            bottom: 45%
+            left: 45.5%
+
+        @media ( max-width: 390px )
+            bottom: 46%
+            left: 41.5%
+
     &__bgperson
         left: -10px
 
+        @media ( max-width: 500px )
+            width: 187px
+
     &__bgflag
         left: 34%
+
+        @media ( max-width: 390px )
+            left: 25%
 
     &__cost
         width: 146px
         margin-right: 38px
 
+        @media ( max-width: 500px )
+            width: 120px
+            margin-right: $gap
+
 .CardTwo-cost
     &__discount
         right: -6%
+
+        @media ( max-width: 500px )
+            right: -15% 

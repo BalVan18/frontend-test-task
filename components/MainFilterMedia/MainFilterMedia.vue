@@ -5,16 +5,16 @@
             <div class="MainFilterMedia-btn MainFilterMedia__btn" @click="filterActive"></div>
         </div>
         <div class="MainFilterMedia-settings MainFilterMedia__settings hidden">
-            <FilterDoublerange />
-            <FilterRadio />
-            <FilterCheckbox />
-        </div>
+                <FilterDoublerange />
+                <FilterRadio />
+                <FilterCheckbox />
+            </div>
     </div>
 </template>
 
 <script setup>
     const filterActive = () => {
-        const wrap = document.querySelector('.MainFilterMedia-wrap')
+        const wrap = document.querySelector('.MainFilterMedia')
         const filter = document.querySelector('.MainFilterMedia-settings')
         filter.classList.toggle('hidden')
         wrap.classList.toggle('active')

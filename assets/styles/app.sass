@@ -25,6 +25,7 @@ body
   color: $black
   font-weight: 500
   line-height: 120%
+  -webkit-tap-highlight-color: transparent
 
   & > * 
     height: 100%
@@ -42,10 +43,10 @@ body
     @include container(1920px, 120px, 120px)
 
   @media (max-width: 1640px)
-    @include container(1640px, 100px, 100px)
+    @include container(1640px, 120px, 120px)
 
-  @media (max-width: 1400px)
-    @include container(1400px, 100px, 100px)
+  @media (max-width: 1399px)
+    @include container(1399px, 100px, 100px)
 
   @media (max-width: 1160px)
     @include container(1160px, 100px, 100px)
@@ -61,4 +62,7 @@ body
 
   @media (max-width: 575px)
     @include container(100%, $gap, $gap)
+
+  @media (max-width: 420px)
+    @include container(100%, 15px, 15px)
 

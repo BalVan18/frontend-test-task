@@ -10,6 +10,10 @@
         width: 200px
         height: 51px
 
+        @media (max-width: 900px)
+            width: 154px
+            height: 43px
+
     &__wrap
         @include trs()
         position: absolute
@@ -17,6 +21,9 @@
         flex-direction: column
         align-items: center
         width: 200px
+
+        @media (max-width: 900px)
+            width: 154px
 
     @media (max-width: 900px)
         margin-right: 5px
@@ -33,6 +40,9 @@
     &__text
         margin-right: 18px
 
+        @media (max-width: 900px)
+            margin-right: 10px
+
     &:hover
         filter: brightness(1.1)
 
@@ -43,13 +53,15 @@
 .FilterDropdown-btn-svg
     @include trs()
 
+.FilterDropdown-btn-svg-path
+    stroke: $white
+
 .visible .FilterDropdown-btn-svg
     transform: rotate(180deg)
 
 .FilterDropdown-wrap
     padding: 10px 0 15px
     background-color: $purple
-    border-top: 1px solid $black
     border-radius: 100px
 
 .visible .FilterDropdown-wrap
@@ -58,10 +70,15 @@
 
 .FilterDropdown-btn-text,
 .FilterDropdown-option
+    color: $white
     font-family: Mulish
     font-size: 18px
     font-weight: 600
     letter-spacing: 0.18px
+
+    @media (max-width: 420px)
+        font-size: 14px
+        letter-spacing: 0.14px
 
 .FilterDropdown-option
     @include trs()

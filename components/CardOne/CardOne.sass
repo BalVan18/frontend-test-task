@@ -7,16 +7,38 @@
         bottom: 42.5%
         left: 29.5%
 
+        @media ( max-width: 500px )
+            bottom: 51.5%
+            left: 39.5%
+            width: 183px
+
+        @media ( max-width: 390px )
+            bottom: 52.5%
+            left: 30.5%
+
     &__bgperson
         left: 0
 
+        @media ( max-width: 500px )
+            width: 187px
+            
     &__bgflag
         left: 36%
 
+        @media ( max-width: 390px )
+            left: 25%
+
     &__cost
         width: 155px
-        margin-right: 30px
+        margin-right: $gap
+
+        @media ( max-width: 500px )
+            width: 120px
+            margin-right: 41px
 
 .CardOne-cost
     &__discount
         right: 0
+
+        @media ( max-width: 500px )
+            right: -12.5% 

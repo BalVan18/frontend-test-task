@@ -22,6 +22,6 @@
 <script>
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
     @import "FilterCheckbox.sass"
 </style>

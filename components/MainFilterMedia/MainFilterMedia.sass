@@ -8,8 +8,9 @@
         display: none
 
     &__wrap
+        @include trs()
         display: flex
-        flex-wrap: wrap
+        align-items: center
 
     &__btn
         width: 46px
@@ -25,7 +26,20 @@
     &__settings
         display: flex
         flex-wrap: wrap
-        gap: $gap
+        flex-direction: row-reverse
+        justify-content: space-between
+        gap: 15px
 
-    .active
-        margin-bottom: calc( $gap * 3 )
+        @media (max-width: 660px)
+            justify-content: flex-end
+            column-gap: calc( $gap * 2 ) 
+            row-gap: $gap
+
+        @media (max-width: 485px)
+            row-gap: calc( $gap + 10px ) 
+
+.active
+    .MainFilterMedia
+        &__wrap
+            margin-bottom: $gap
+

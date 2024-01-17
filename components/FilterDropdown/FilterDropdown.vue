@@ -3,8 +3,8 @@
         <div class="FilterDropdown-btn FilterDropdown__btn" @click="isDropDownVisible=true">
             <span class="FilterDropdown-btn-text FilterDropdown-btn__text">{{ selectedOption || "Язык" }}</span>
             <svg class="FilterDropdown-btn-svg FilterDropdown-btn__svg" width="15" height="7.5" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L8.5 8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
-                <path d="M16 1L8.5 8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="FilterDropdown-btn-svg-path" d="M1 1L8.5 8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                <path class="FilterDropdown-btn-svg-path" d="M16 1L8.5 8.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </div>
         <transition name="slide-fade">

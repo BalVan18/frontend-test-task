@@ -16,9 +16,9 @@
             </li>
           </ul>
         </nav>
-        <AppLogo fill="#fff" />
+        <AppLogo fill="#fff" class="AppFooter-logo"/>
       </div>
-      <p class="AppFooter-span AppFooter__span">© DailyLangs | 2023. Все права защищены</p>
+      <p class="AppFooter-copyright AppFooter__copyright">© DailyLangs | 2023. Все права защищены</p>
     </div>
   </footer>
 </template>

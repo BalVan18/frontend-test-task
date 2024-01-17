@@ -2,14 +2,56 @@
 @import '~/assets/styles/mixins.sass'
 
 .AppMain
+    position: relative
+    padding-top: 73px
     padding-bottom: 140px
-    background-image: url(/img/bg.png)
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
+    overflow: hidden
+
+    &::before
+        content: ""
+        position: absolute
+        width: 155px
+        height: 155px
+        right: 20px
+        bottom: 105px
+        background-image: url(/img/star.svg)
+        background-repeat: no-repeat
+        background-size: 100%
+        z-index: -1
+        animation: star 5s ease 3s infinite
+
+        @media (max-width: 900px)
+            width: 84px
+            height: 84px
+            top: 59px
+            right: -4px
+            bottom: 0
+
+    &::after
+        content: ""
+        position: absolute
+        width: 400px
+        height: 400px
+        top: 34px
+        right: -88px
+        background-image: url(/img/ellipse.svg)
+        background-repeat: no-repeat
+        background-size: 100%
+        z-index: -1
+        animation: ellipse 12s ease 3s infinite
+
+        @media (max-width: 1300px)
+            display: none
 
     @media (min-width: 1401px)
         background-size: 100% 100%
+
+    @media (max-width: 900px)
+        margin-bottom: calc( $gap * 3 )
+        padding-top: 44px
+
+    @media (max-width: 600px)
+        margin-bottom: calc( $gap * 2 )
 
     &__container
         display: flex
@@ -20,11 +62,73 @@
             align-items: center
             row-gap: calc( $gap * 3 )    
 
+        @media (max-width: 800px)
+            row-gap: calc( $gap * 2 )
+
+        @media (max-width: 500px)
+            row-gap: 35px
+
+        &::before
+            content: ""
+            position: absolute
+            width: 180px
+            height: 258px
+            bottom: 66px
+            left: 37px
+            background-image: url(/img/lines.svg)
+            background-repeat: no-repeat
+            background-size: 100%
+            z-index: -1
+            animation: lines 5s ease 3s infinite
+
+            @media (max-width: 900px)
+                display: none
+            
     &__hero
         display: flex
         flex-direction: column
         max-width: 860px
         width: 100%
+        margin: 0 auto
+
+@keyframes ellipse
+    0%
+        transform: rotate(0deg)
+
+    10%
+        transform: rotate(0deg)
+
+    26%
+        transform: rotate(-60deg)
+        
+    31%
+        transform: rotate(420deg)
+
+    39%
+        transform: rotate(360deg)
+
+    100%
+        transform: rotate(360deg)
+
+@keyframes lines
+    0%
+        transform: translateY(-10%)
+
+    50%
+        transform: translateY(10%)
+
+    100%
+        transform: translateY(-10%)
+
+@keyframes star
+    0%
+        transform: scale(1)
+
+    50%
+        transform: scale(1.1)
+
+    100%
+        transform: scale(1)
 
 
 

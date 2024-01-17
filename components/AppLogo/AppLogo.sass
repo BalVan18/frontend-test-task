@@ -3,8 +3,15 @@
 
 .AppLogo
     @include trs()
-    height: 43px
     cursor: pointer
+    z-index: 3
+
+    &__svg
+        @media (max-width: 900px)
+            width: 177px
+
+        @media (max-width: 420px)
+            width: 131px
 
     &:hover
         transform: scale(1.05)
