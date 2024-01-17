@@ -12,5 +12,5 @@
 </template>
 
 <style lang="sass" scoped>
-  @import "AppMain.sass"
+  @import "AppMain"
 </style>

@@ -22,5 +22,5 @@
 </script>
 
 <style lang="sass">
-    @import "MainFilterMedia.sass"
+    @import "MainFilterMedia"
 </style>

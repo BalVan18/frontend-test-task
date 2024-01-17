@@ -8,5 +8,5 @@
 </template>
 
 <style lang="sass" scoped>
-  @import "MainCards.sass"
+  @import "MainCards"
 </style>

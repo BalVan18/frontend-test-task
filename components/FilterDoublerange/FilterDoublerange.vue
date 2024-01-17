@@ -20,5 +20,5 @@
 
 <style lang="sass">
     @import "@vueform/slider/themes/default.css"
-    @import "FilterDoublerange.sass"
+    @import "FilterDoublerange"
 </style>

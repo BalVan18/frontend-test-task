@@ -24,5 +24,5 @@
 </template>
 
 <style lang="sass" scoped>
-  @import "AppFooter.sass"
+  @import "AppFooter"
 </style>

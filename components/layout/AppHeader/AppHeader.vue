@@ -19,8 +19,8 @@
             </a>
           </li>
         </ul>
-        <img src="/img/search.png" alt="Иконка поиска" class="AppHeader-nav-search AppHeader-nav__search">
-        <img src="/img/person.png" alt="Личный кабинет" class="AppHeader-nav-person AppHeader-nav__person">
+        <img src="~/assets/img/search.png" alt="Иконка поиска" class="AppHeader-nav-search AppHeader-nav__search">
+        <img src="~/assets/img/person.png" alt="Личный кабинет" class="AppHeader-nav-person AppHeader-nav__person">
         <BurgerMenu />
         <HeaderDropdown :options="['RU','EN']" />
       </nav>
@@ -28,5 +28,5 @@
 </template>
 
 <style lang="sass" scoped>
-  @import "AppHeader.sass"
+  @import "AppHeader"
 </style>

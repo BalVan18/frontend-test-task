@@ -23,7 +23,7 @@
                     </a>
                 </li>
             </ul>
-            <img src="/img/search.png" alt="Иконка поиска" class="BurgerMenu-nav-search BurgerMenu-nav__search">
+            <img src="~/assets/img/search.png" alt="Иконка поиска" class="BurgerMenu-nav-search BurgerMenu-nav__search">
             <HeaderDropdown :options="['RU','EN']" />
         </nav>
     </div>
@@ -38,5 +38,5 @@
 </script>
 
 <style lang="sass" scoped>
-  @import "BurgerMenu.sass"
+  @import "BurgerMenu"
 </style>

@@ -52,5 +52,5 @@
 </script>
 
 <style lang="sass" scoped>
-  @import "FilterDropdown.sass"
+  @import "FilterDropdown"
 </style>

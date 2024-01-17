@@ -3,5 +3,5 @@
 </template>
 
 <style lang="sass" scoped>
-  @import "MainTitle.sass"
+  @import "MainTitle"
 </style>

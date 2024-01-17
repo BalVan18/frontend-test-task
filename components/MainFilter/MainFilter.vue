@@ -8,5 +8,5 @@
 </template>
 
 <style lang="sass" scoped>
-    @import "MainFilter.sass"
+    @import "MainFilter"
 </style>

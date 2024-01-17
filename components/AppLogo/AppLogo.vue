@@ -8,15 +8,14 @@
 </template>
 
 <script setup>
-  import { defineProps } from 'vue';
-    const props = defineProps({
-      fill: {
-        type: String,
-        default: "#C05AFF"
-      }
+  const props = defineProps({
+    fill: {
+      type: String,
+      default: "#C05AFF"
+    }
   })
 </script>
 
 <style lang="sass" scoped>
-  @import "AppLogo.sass"
+  @import "AppLogo"
 </style>

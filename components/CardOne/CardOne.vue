@@ -1,9 +1,9 @@
 <template>
     <div class="CardOne Card">
         <h2 class="CardOne-title CardOne__title Card-title Card__title"><span>Английский шаг за шагом:</span><br><span class="CardOne-title--colored Card-title--colored">Базовый уровень</span></h2>
-        <img src="/img/A-Z.svg" alt="Фоновое изобрадние" class="CardOne-bgimage CardOne__bgimage Card-bgimage Card__bgimage">
-        <img src="/img/girl1.png" alt="Изобрадение девушки" class="CardOne-bgperson CardOne__bgperson Card-bgperson Card__bgperson">
-        <img src="/img/flag.png" alt="Флаг Британии" class="CardOne-bgflag CardOne__bgflag Card-bgflag Card__bgflag">
+        <img src="~/assets/img/A-Z.svg" alt="Фоновое изобрадние" class="CardOne-bgimage CardOne__bgimage Card-bgimage Card__bgimage">
+        <img src="~/assets/img/girl1.png" alt="Изобрадение девушки" class="CardOne-bgperson CardOne__bgperson Card-bgperson Card__bgperson">
+        <img src="~/assets/img/flag.png" alt="Флаг Британии" class="CardOne-bgflag CardOne__bgflag Card-bgflag Card__bgflag">
         <div class="CardOne-person CardOne__person Card-person Card__person">
             <p class="CardOne-person-name CardOne-person__name Card-person-name Card-person__name">Полина Коваленко</p>
             <svg class="CardOne-person__svg Card-person__svg" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
@@ -25,5 +25,5 @@
 </template>
 
 <style lang="sass" scoped>
-    @import "CardOne.sass" 
+    @import "CardOne" 
 </style>
