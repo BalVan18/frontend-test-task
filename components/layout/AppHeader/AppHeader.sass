@@ -6,20 +6,65 @@
     justify-content: space-between
     padding-top: 45px
     padding-bottom: 73px
+    z-index: 100
 
-.AppHeader__nav
-    display: flex
+    &__nav
+        display: flex
+
+    .HeaderDropdown
+        @media (max-width: 900px)
+            display: none
 
 .AppHeader-nav
-    align-items: center 
+    align-items: center
     justify-content: space-between
 
-.AppHeader-nav__list
-    display: flex
-    margin-right: 64px
-    
+    &__list
+        display: flex
+        margin-right: 64px
+
+        @media (max-width: 1300px)
+            margin-right: 40px
+            
+        @media (max-width: 900px)
+            display: none
+
+    &__search,
+    &__person
+        margin-right: 21px
+
+    &__search
+        @media (max-width: 900px)
+            display: none
+
+    &__person
+        @media (max-width: 900px)
+            width: 33px
+            margin-right: 18px
+
+    &.active
+        position: absolute
+        align-items: flex-start
+        justify-content: flex-end
+        padding: 50px 60px 0
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: $white
+        z-index: 100
+
+        @media (max-width: 768px)
+            padding: 50px 40px 0
+
+        @media (max-width: 575px)
+            padding: 50px $gap 0
+
 .AppHeader-nav-list
     gap: 71px
+
+    @media (max-width: 1300px)
+        gap: 50px
 
 .AppHeader-nav-list-item-link
     @include trs()
@@ -31,11 +76,7 @@
         color: $purple
 
     &:active
-        color: $black 
-
-.AppHeader-nav__search,
-.AppHeader-nav__person
-    margin-right: 21px
+        color: $black
 
 .AppHeader-nav-search,
 .AppHeader-nav-person
@@ -47,3 +88,4 @@
 
     &:active
         transform: scale(0.95)
+

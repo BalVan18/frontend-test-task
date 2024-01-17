@@ -1,0 +1,65 @@
+@import '~/assets/styles/variables'
+@import '~/assets/styles/mixins.sass'
+  
+.BurgerMenu
+    position: relative
+    display: none
+    
+    
+    @media (max-width: 900px)
+        display: block
+
+    &__nav
+        display: none
+
+.BurgerMenu-btn
+    display: flex
+    flex-direction: column
+
+    &__line 
+        width: 37px
+        height: 1px
+
+        &:not(:last-of-type) 
+            margin-bottom: 7.5px
+
+.BurgerMenu-btn-line
+    @include trs()
+    background-color: $purple
+
+.BurgerMenu-nav-list-item-link
+    font-size: 18px
+    letter-spacing: 0.18px
+
+
+.active 
+    .line--1 
+        transform: rotate(-45deg) translate(-5.5px, 6.5px)
+
+    .line--2
+        opacity: 0
+
+    .line--3 
+        transform: rotate(45deg) translate(-6.5px, -5.5px)
+
+    .BurgerMenu
+        &__btn
+            margin-top: 7.5px
+
+        &__nav
+            position: absolute
+            left: -45vw
+            top: 10vh
+
+    .BurgerMenu-nav,
+    .BurgerMenu-nav-list
+        display: flex
+        align-items: center
+        flex-direction: column
+        gap: calc( $gap / 2 )
+
+    .BurgerMenu-nav__search
+        width: 31px 
+
+
+

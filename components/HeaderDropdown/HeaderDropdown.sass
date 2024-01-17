@@ -4,17 +4,23 @@
 .HeaderDropdown
     position: relative
 
-.HeaderDropdown__btn
-    display: flex
-    width: 46px
-    height: 22px
+    &__btn
+        display: flex
+        width: 46px
+        height: 22px
+
+    &__wrap
+        position: absolute
+        bottom: -25px
+        width: 46px
+        height: 22px
 
 .HeaderDropdown-btn
     @include trs()
     align-items: center
     justify-content: space-between
     cursor: pointer
-    
+
     &:hover
         color: $purple
 
@@ -31,12 +37,11 @@
     transform: rotate(180deg)
 
 .visible .HeaderDropdown-btn
-    &:hover 
+    &:hover
         color: $black
 
         .HeaderDropdown-btn-svg-path
             stroke: $black
-        
 
 .HeaderDropdown-btn-text,
 .HeaderDropdown-option
@@ -46,30 +51,22 @@
     letter-spacing: 0.18px
 
 .HeaderDropdown-option
-    @include trs() 
+    @include trs()
     cursor: pointer
 
     &:hover
         color: $purple
 
     &:active
-        color: $black    
+        color: $black
 
-.HeaderDropdown__wrap
-    position: absolute
-    bottom: -25px
-    width: 46px
-    height: 22px
-
-.slide-fade-enter-active 
-    @include trs() 
-
-
-.slide-fade-leave-active 
+.slide-fade-enter-active
     @include trs()
 
+.slide-fade-leave-active
+    @include trs()
 
 .slide-fade-enter-from,
-.slide-fade-leave-to 
+.slide-fade-leave-to
     transform: translateY(-10px)
     opacity: 0

@@ -2,12 +2,29 @@
 @import '~/assets/styles/mixins.sass'
 
 .AppMain
-    display: flex
-    justify-content: space-between
-    margin-bottom: 140px
+    padding-bottom: 140px
+    background-image: url(/img/bg.png)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
 
-.AppMain__hero
-    display: flex
-    flex-direction: column
-    width: 860px
-    
+    @media (min-width: 1401px)
+        background-size: 100% 100%
+
+    &__container
+        display: flex
+        justify-content: space-between
+
+        @media (max-width: 1300px)
+            flex-direction: column
+            align-items: center
+            row-gap: calc( $gap * 3 )    
+
+    &__hero
+        display: flex
+        flex-direction: column
+        max-width: 860px
+        width: 100%
+
+
+

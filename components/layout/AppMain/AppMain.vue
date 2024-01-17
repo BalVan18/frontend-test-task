@@ -1,9 +1,12 @@
 <template>
-  <main class="AppMain container">
-    <MainFilter />
-    <div class="AppMain-hero AppMain__hero">
-      <MainTitle />
-      <MainCards />
+  <main class="AppMain">
+    <div class="AppMain-container AppMain__container container">
+      <MainFilter />
+      <MainFilterMedia />
+      <div class="AppMain-hero AppMain__hero">
+        <MainTitle />
+        <MainCards />
+      </div>
     </div>
   </main>
 </template>

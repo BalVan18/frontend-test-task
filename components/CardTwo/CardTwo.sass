@@ -1,149 +1,22 @@
 @import '~/assets/styles/variables'
 @import '~/assets/styles/mixins.sass'
+@import '~/assets/styles/cardCommon.sass'
 
 .CardTwo
-    position: relative
-    display: flex
-    flex-direction: column
-    width: 400px
-    height: 341px
-    padding: 25px 20px 29px
-    background-color: $purple
-    backdrop-filter: blur(2px)
-    border-radius: 30px
+    &__bgimage
+        bottom: 38%
+        left: 56.5%
 
-.CardTwo__title
-    margin-bottom: 17px
+    &__bgperson
+        left: -10px
 
-.CardTwo-title
-    color: $white
-    font-size: 24px
-    font-weight: 800
-    line-height: 1.2
-    letter-spacing: 0.24px
+    &__bgflag
+        left: 34%
 
-.CardTwoTitle--colored
-    color: $yellow
+    &__cost
+        width: 146px
+        margin-right: 38px
 
-.CardTwo__bgimage
-    position: absolute
-    bottom: 38%
-    left: 56.5%
-    z-index: -1
-    pointer-events: none
-
-.CardTwo__bgperson
-    position: absolute
-    bottom: 0
-    left: -10px
-    z-index: -1
-    pointer-events: none
-
-.CardTwo__bgflag
-    position: absolute
-    bottom: 13px
-    left: 34%
-    z-index: -1
-    pointer-events: none
-
-.CardTwo__person
-    display: flex
-    align-items: center
-    justify-content: center
-    align-self: end
-    margin-right: 48px
-    margin-bottom: 55px
-    width: 184px
-    height: 32px
-
-.CardTwo-person
-    position: relative
-    border-radius: 60px
-    background-color: $light-green
-    pointer-events: none
-
-.CardTwo-person-name
-    font-size: 14px
-    font-weight: 700
-    line-height: 150% 
-    letter-spacing: 0.14px
-
-.CardTwo-person__svg
-    position: absolute
-    bottom: -19px
-    left: -14px
-
-.CardTwo__cost
-    position: relative
-    display: flex
-    flex-direction: column
-    align-self: end
-    width: 146px
-    margin-right: 38px
-
-.CardTwo-cost 
-    color: $white
-    pointer-events: none
-
-.CardTwo-cost__big
-    margin-bottom: 5px
-
-.CardTwo-cost-big
-    font-size: 40px
-    font-weight: 800
-    line-height: 1
-    letter-spacing: 0.4px
-
-.CardTwo-cost__small
-    align-self: end
-
-.CardTwo-cost-small
-    position: relative
-    font-size: 20px
-    font-weight: 800
-    letter-spacing: 0.2px
-
-.CardTwo-cost-small::before
-    content: ""
-    position: absolute
-    width: 65px
-    height: 1px
-    top: 50%
-    right: -1px
-    background-color: $pink
-
-.CardTwo-cost__discount
-    position: absolute
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 48px
-    height: 18px
-    right: -6%
-    bottom: 33%
-    transform: translate(50%)
-
-.CardTwo-cost-discount
-    font-size: 10px
-    font-weight: 600
-    letter-spacing: 0.1px
-    background-color: $pink
-    border-radius: 199px
-
-.CardTwo__link
-    align-self: end
-    margin-top: auto
-    margin-right: 4px
-
-.CardTwo-link
-    color: $white
-    font-size: 18px
-    letter-spacing: 0.18px
-    cursor: pointer
-
-    &:hover
-        .CardTwo-link-svg
-            transform: scale(1.15)
-
-.CardTwo-link-svg
-    @include trs()
+.CardTwo-cost
+    &__discount
+        right: -6%

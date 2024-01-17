@@ -21,6 +21,7 @@ body
     
 
 body 
+  position: relative
   color: $black
   font-weight: 500
   line-height: 120%
@@ -28,29 +29,35 @@ body
   & > * 
     height: 100%
 
+.overflow
+  overflow: hidden
+
+.hidden
+  display: none
+
 .container 
   @include container(1920px, 120px, 120px)
 
   @media (max-width: 1920px)
-    @include container(1640px, 120px, 120px)
+    @include container(1920px, 120px, 120px)
 
   @media (max-width: 1640px)
-    @include container(1400px, 120px, 120px)
+    @include container(1640px, 100px, 100px)
 
   @media (max-width: 1400px)
-    @include container(1160px, 120px, 120px)
+    @include container(1400px, 100px, 100px)
 
   @media (max-width: 1160px)
-    @include container(960px, 100px, 100px)
+    @include container(1160px, 100px, 100px)
 
   @media (max-width: 1023px)
-    @include container(900px, 80px, 80px)
+    @include container(1023px, 80px, 80px)
 
   @media (max-width: 900px)
-    @include container(768px, 60px, 60px)
+    @include container(900px, 60px, 60px)
 
   @media (max-width: 768px)
-    @include container(540px, 40px, 40px)
+    @include container(768px, 40px, 40px)
 
   @media (max-width: 575px)
     @include container(100%, $gap, $gap)

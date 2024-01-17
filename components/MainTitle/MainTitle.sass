@@ -8,6 +8,15 @@
     letter-spacing: 0.48px
     margin-bottom: 80px
 
+    @media (max-width: 1300px)
+        text-align: center
+
+    @media (max-width: 800px)
+        display: flex
+        flex-direction: column
+        gap: calc( $gap / 2 )
+        align-items: flex-start
+
     &--bordered
         padding: 7px 14px 14px 13px
         background-color: $light-green

@@ -21,15 +21,11 @@
         </ul>
         <img src="/img/search.png" alt="Иконка поиска" class="AppHeader-nav-search AppHeader-nav__search">
         <img src="/img/person.png" alt="Личный кабинет" class="AppHeader-nav-person AppHeader-nav__person">
-        <HeaderDropdown :options="options" />
+        <BurgerMenu />
+        <HeaderDropdown :options="['RU','EN']" />
       </nav>
     </header>
 </template>
-
-<script setup>
-  import { ref } from 'vue';
-  const options = ref([ "RU", "EN" ])
-</script>
 
 <style lang="sass" scoped>
   @import "AppHeader.sass"

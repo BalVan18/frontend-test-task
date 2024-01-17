@@ -4,8 +4,14 @@
 .FilterDoublerange
     margin-bottom: 45px
 
-.FilterDoublerange__title
-    margin-bottom: calc( $gap + 4px )
+    &__title
+        margin-bottom: calc( $gap + 4px )
+
+    &__count
+        margin-bottom: 17px
+
+    @media (max-width: 900px)
+        margin-bottom: 0
 
 .FilterDoublerange-title
     font-size: 18px
@@ -26,7 +32,7 @@
     @include trs()
 
 .slider-handle:focus
-    box-shadow: none    
+    box-shadow: none
 
 .slider-handle:active
     box-shadow: 0 0 4px 6px rgba(192, 90, 255, 0.2)
@@ -34,9 +40,6 @@
 .slider-horizontal .slider-handle
     width: 14px
     height: 14px
-
-.FilterDoublerange__count
-    margin-bottom: 17px    
 
 .FilterDoublerange-count
     font-size: 18px
