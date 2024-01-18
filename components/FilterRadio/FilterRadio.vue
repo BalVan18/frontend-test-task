@@ -1,7 +1,7 @@
 <template>
     <div class="FilterRadio">
         <h4 class="FilterRadio-title FilterRadio__title">Сложность</h4>
-        <label class="FilterRadio-label FilterRadio__label">
+        <label class="FilterRadio-label FilterRadio__label checked">
             <input type="radio" name="FilterRadio" class="FilterRadio-input FilterRadio__input">
             <span class="FilterRadio-text FilterRadio__text" @click="checked">Для всех</span>
         </label>
